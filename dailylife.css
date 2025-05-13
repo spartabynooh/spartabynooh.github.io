@@ -1,0 +1,121 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Typography & Layout */
+  body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(to right, #fffaf0, #f0e6d2);
+    color: #2f2f2f;
+  }
+  
+  /* Header */
+  header {
+    background: #a6342e;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  
+  nav a {
+    margin: 0 12px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  nav a.active::after,
+  nav a:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: gold;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+  
+  /* Intro Section */
+  .intro {
+    text-align: center;
+    padding: 60px 20px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/6/6a/Spartan_warrior_statue.jpg') center/cover no-repeat;
+    color: white;
+    text-shadow: 1px 1px 5px #000;
+  }
+  
+  .intro h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .intro p {
+    font-size: 1.3em;
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  /* Grid Section */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 50px 30px;
+  }
+  
+  .tile {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    border: 2px solid #e0d4b7;
+  }
+  
+  .tile:hover {
+    transform: translateY(-8px);
+  }
+  
+  .tile h2 {
+    color: #a6342e;
+    margin-bottom: 10px;
+  }
+  
+  /* Fun Fact Section */
+  .fun-fact {
+    background: #fff3cd;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 1.2em;
+    border-top: 3px dashed #a6342e;
+    border-bottom: 3px dashed #a6342e;
+  }
+  
+  .fun-fact h2 {
+    color: #a6342e;
+    margin-bottom: 15px;
+  }
+  
+  /* Footer */
+  footer {
+    background: #a6342e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+  }
+  

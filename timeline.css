@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: #fffefc;
+    color: #333;
+  }
+  
+  header {
+    background: #82204a;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  nav a.active::after,
+  nav a:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: gold;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+  
+  main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 20px;
+  }
+  
+  .intro {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  
+  .intro h1 {
+    font-size: 2.5em;
+    color: #82204a;
+    margin-bottom: 10px;
+  }
+  
+  .intro p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .timeline {
+    position: relative;
+    border-left: 5px solid #82204a;
+    padding-left: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .event {
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .event::before {
+    content: '🔘';
+    position: absolute;
+    left: -22px;
+    top: 5px;
+    font-size: 1.2em;
+    color: #82204a;
+  }
+  
+  .date {
+    font-weight: bold;
+    color: #b03060;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+  }
+  
+  .details h2 {
+    margin-bottom: 8px;
+    color: #1f4068;
+  }
+  
+  .details p {
+    font-size: 1.05em;
+    line-height: 1.6;
+  }
+  
+  .wrap-up {
+    background: #fcefee;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  
+  .wrap-up h2 {
+    margin-bottom: 15px;
+    color: #82204a;
+  }
+  
+  .wrap-up ul {
+    padding-left: 20px;
+    font-size: 1.1em;
+  }
+  
+  footer {
+    background: #82204a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.95em;
+    margin-top: 40px;
+  }
+  

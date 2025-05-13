@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Educational Games Hub</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body and Header */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f0f8ff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #0077b6;
+      color: #fff;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+    }
+
+    /* Main Section - Game Cards */
+    main {
+      padding: 40px 10%;
+    }
+
+    .game-list {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .game-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: calc(33% - 2rem);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .game-card:hover {
+      transform: scale(1.05);
+    }
+
+    .game-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .game-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .game-card p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    /* Button Styles */
+    .btn {
+      background-color: #00b4d8;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0077b6;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #003d5b;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+
+  </style>
+</head>
+<body>
+  
+  <header>
+    <h1>🎓 Welcome to the Educational Games Hub</h1>
+    <p>Your learning adventure starts here! Choose a game to play and explore new topics.</p>
+  </header>
+
+  <main>
+    <section class="game-list">
+      <div class="game-card">
+        <img src="ChatGPT Image May 7, 2025, 08_53_37 PM.png" alt="Game 1 Image" />
+        <h3>Memory Match: Ancient Greece</h3>
+        <p>Test your memory and learn about Ancient Greece!</p>
+        <button onclick="window.location.href='https://spartabynooh.github.io/Memory Match.html'" class="btn">Play Game</button>
+      </div>
+
+      <div class="game-card">
+        <img src="ChatGPT Image May 7, 2025, 08_55_59 PM.png" alt="Game 2 Image" />
+        <h3>Greek God Game</h3>
+        <p>Jump Around obstacles as you move with Hercules!</p>
+        <button onclick="window.location.href='https://spartabynooh.github.io/Hercules Jumper.html'" class="btn">Play Game</button>
+      </div>
+
+      <div class="game-card">
+        <img src="ChatGPT Image May 7, 2025, 09_00_48 PM.png" alt="Game 3 Image" />
+        <h3>Build Your Spartan Character</h3>
+        <p>Create your own Spartan character, and have fun!</p>
+        <button onclick="window.location.href='https://spartabynooh.github.io/Character Creator.html'" class="btn">Play Game</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Educational Games Hub. All rights reserved.</p>
+  </footer>
+
+
+<audio id="click-sound" src="click.mp3" preload="auto"></audio>
+
+<script>
+  const clickSound = document.getElementById("click-sound");
+
+  document.addEventListener("click", () => {
+    clickSound.currentTime = 0;
+    clickSound.play().catch(e => {
+      // Handle any playback errors
+    });
+  });
+</script>
+
+    
+
+ 
+</body>
+</html>
